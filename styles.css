@@ -37,3 +37,127 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger-icon span {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+.menu-links {
+  list-style-type: none;
+  position: absolute;
+  right: 0;
+  max-height: 0;
+  width: fit-content;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.menu-links.open {
+  max-height: 300px;
+}
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  height: 90vh;
+  align-items: center;
+}
+.profile-pic-container {
+  max-width: 350px;
+}
+.profile-pic-container img {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.profile-details p {
+  color: rgb(85, 85, 85);
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+}
+.profile-details h1 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.profile-details span {
+  font-size: 1.4rem;
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  text-align: center;
+}
+.cv-contact-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.cv-btn,
+.contact-btn {
+  padding: 12px 14px;
+  border-radius: 24px;
+  font-size: 0.75rem;
+  border: none;
+  background-color: rgb(53, 53, 53);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cv-btn {
+  border: 1px solid rgb(53, 53, 53);
+  background: transparent;
+  color: rgb(53, 53, 53);
+  font-weight: 600;
+}
+.cv-btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+.contact-btn:hover {
+  background-color: black;
+}
+
+.icons-container {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+.icon {
+  width: 2.2rem;
+  border: none;
+  background-color: transparent;
+}
+.icon img {
+  width: 100%;
+  border-radius: 50%;
+}
