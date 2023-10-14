@@ -161,3 +161,47 @@ a:hover {
   width: 100%;
   border-radius: 50%;
 }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: 90vh;
+}
+.about-container h1{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 2rem;
+  margin: 2rem;
+}
+.experience,
+.education {
+  border: 1px solid rgb(183, 183, 183);
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 2rem;
+  max-width: 300px;
+  color: rgb(85, 85, 85);
+}
+.experience h2,.education h2 {
+  font-size: 1.2rem;
+}
+
+.about-container p:first-child {
+  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
+}
+.about-container p:last-child {
+  color: rgb(85, 85, 85);
+  font-size: 1rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  max-width: 800px;
+}
