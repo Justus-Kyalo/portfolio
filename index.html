@@ -29,7 +29,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
         </div>
@@ -45,16 +45,22 @@
         <span>Frontend Developer</span>
         <div class="cv-contact-btns">
           <button class="cv-btn">Download CV</button>
-          <button class="contact-btn">Contact info</button>
+          <button
+            class="contact-btn"
+            onclick="location.href
+          ='./#contact'"
+          >
+            Contact info
+          </button>
         </div>
         <div class="icons-container">
-          <button class="icon"><img src="linkedin.png" alt="" /></button>
-          <button class="icon"><img src="github.png" alt="" /></button>
+          <button class="icon"><img src="linkedin.png" alt="" /></button
+          ><button class="icon"><img src="github.png" alt="" /></button>
         </div>
       </div>
     </section>
 
-    <section class="about-container">
+    <section id="about" class="about-container">
       <p>get to know more</p>
       <h1>About me</h1>
       <div class="about-me">
@@ -71,13 +77,95 @@
           <span>B.Sc Mathematics and Computer Science</span>
         </div>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis
-        sapiente hic odio quod voluptates alias nobis excepturi perspiciatis
-        natus voluptatem exercitationem voluptas quibusdam deserunt impedit
-        libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum
-        perspiciatis, eaque quos nobis?
-      </p>
+      <div class="profile-summary">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis
+          sapiente hic odio quod voluptates alias nobis excepturi perspiciatis
+          natus voluptatem exercitationem voluptas quibusdam deserunt impedit
+          libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum
+          perspiciatis, eaque quos nobis?
+        </p>
+      </div>
+      <button class="icon arrow" onclick="location.href='./#experience'">
+        <img src="arrow.png" alt="" />
+      </button>
+    </section>
+    <section id="experience" class="skills-container">
+      <p>Explore MY</p>
+      <h1>Experience & Skills</h1>
+      <div class="skills-categories">
+        <div class="category">
+          <h2>Frontend Development</h2>
+          <div class="articles-container">
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>HTML</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>CSS</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>JavaScript</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>ReactJs</span>
+            </article>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Backend Development</h2>
+          <div class="articles-container">
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Ruby</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Ruby on Rails</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>PostgreSQL</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>MySQL</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>SQLite</span>
+            </article>
+          </div>
+        </div>
+        <div class="category">
+          <h2>Tools/Version Control</h2>
+          <div class="articles-container">
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Git</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Linux</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Trello</span>
+            </article>
+            <article>
+              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <span>Slack</span>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <button class="icon arrow" onclick="location.href='./#projects'">
+        <img src="arrow.png" alt="" />
+      </button>
     </section>
 
     <script src="script.js"></script>
