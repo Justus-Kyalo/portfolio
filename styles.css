@@ -10,11 +10,28 @@ html {
 body {
   font-family: "Poppins", sans-serif;
 }
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+p {
+  color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 10vh;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 .nav-links {
   display: flex;
@@ -25,6 +42,7 @@ a {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
+  font-size: 1.3rem;
 }
 a:hover {
   color: gray;
@@ -33,7 +51,7 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 .logo {
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -110,9 +128,7 @@ a:hover {
   text-align: center;
 }
 .profile-details h1 {
-  font-weight: 600;
   text-align: center;
-  font-size: 1.6rem;
 }
 .profile-details span {
   font-size: 1.4rem;
@@ -177,10 +193,7 @@ a:hover {
   height: 90vh;
   position: relative;
 }
-.about-container h1 {
-  font-size: 1.6rem;
-  font-weight: 500;
-}
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -288,4 +301,26 @@ article {
 }
 .project-btn {
   font-size: 1rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  height: 80vh;
+  justify-content: center;
+}
+.contacts-btns {
+  padding: 2rem;
+  border: 1px solid rgb(53, 53, 53);
+  border-radius: 2rem;
+}
+.contacts-btns span {
+  margin: 1rem;
+}
+.social-btns {
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 1rem;
 }
