@@ -15,8 +15,8 @@ h1 {
   font-weight: 500;
 }
 h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 p {
   color: rgb(85, 85, 85);
@@ -32,6 +32,7 @@ nav {
   top: 0;
   background-color: white;
   z-index: 1;
+  /* border-bottom: 1px solid rgb(194,191,191); */
 }
 section {
   padding: 2rem;
@@ -46,6 +47,9 @@ a {
   color: black;
   text-transform: capitalize;
   font-size: 1.3rem;
+}
+button {
+  cursor: pointer;
 }
 a:hover {
   color: gray;
@@ -231,14 +235,9 @@ a:hover {
   max-width: 800px;
   padding: 1.5rem;
 }
-.arrow {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 5rem;
-}
 
 .skills-container {
-  /* min-height: 80vh; */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,7 +270,7 @@ article {
   align-items: center;
   column-gap: 1rem;
 }
-.projects {
+.projects-section {
   position: relative;
   text-align: center;
   display: flex;
@@ -282,7 +281,8 @@ article {
   gap: 2rem;
 }
 .project-image {
-  max-width: 400px;
+  max-width: 300px;
+  max-height: 300px;
 }
 .project-image img {
   width: 100%;
@@ -295,7 +295,9 @@ article {
   gap: 2rem;
 }
 .sample-project {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 .project-btns {
@@ -306,21 +308,31 @@ article {
 .project-btn {
   font-size: 1rem;
 }
-
-.contacts {
+.project-btn:hover {
+  color: white;
+}
+.project-btn a {
+  font-size: 1rem;
+}
+.project-btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+.contacts-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  /* height: 80vh; */
   justify-content: center;
 }
 .contacts-btns {
   padding: 2rem;
   border: 1px solid rgb(53, 53, 53);
   border-radius: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
-.contacts-btns span {
+.contacts-btns div {
   margin: 1rem;
 }
 .social-btns {

@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="media.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Justus Kyalo</div>
+    <nav id="desktop-nav" >
+      <div class="logo" onclick="location.href='#profile'">Justus Kyalo</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">projects</a></li>
-          <li><a href="#contacts">contact</a></li>
+          <li><a href="#contacts">contacts</a></li>
         </ul>
       </div>
     </nav>
@@ -31,20 +31,20 @@
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">contact</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">contacts</a></li>
         </div>
       </div>
     </nav>
     <section id="profile" class="profile-container">
-      <div class="profile-pic-container">
-        <img src="remmypassport.jpeg" alt="" />
+            <div class="profile-pic-container">
+        <img src="./assets/remmypassport.jpeg" alt="" />
       </div>
       <div class="profile-details">
         <p>Hello, I'm</p>
         <h1>Justus Kyalo</h1>
         <span>Frontend Developer</span>
         <div class="cv-contact-btns">
-          <button class="cv-btn">Download CV</button>
+          <button class="cv-btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
           <button
             class="contact-btn"
             onclick="location.href
@@ -54,8 +54,8 @@
           </button>
         </div>
         <div class="icons-container">
-          <button class="icon"><img src="linkedin.png" alt="" /></button
-          ><button class="icon"><img src="github.png" alt="" /></button>
+          <button class="icon" onclick="location.href='https://www.linkedin.com/in/justus-kyalo/'"><img src="./assets/linkedin.png" alt="" /></button
+          ><button class="icon" onclick="location.href='https://github.com/RemmyKyalo'"><img src="./assets/github.png" alt="" /></button>
         </div>
       </div>
     </section>
@@ -65,13 +65,13 @@
       <h1>About me</h1>
       <div class="about-me">
         <div class="experience">
-          <button class="icon"><img src="experience.png" alt="" /></button>
+          <button class="icon"><img src="./assets/experience.png" alt="" /></button>
           <h2>Experience</h2>
           <span>2+ Years <br />Frontend Development</span>
         </div>
         <div class="education">
           <button class="icon">
-            <img src="education.png" alt="" />
+            <img src="./assets/education.png" alt="" />
           </button>
           <h2>Education</h2>
           <span>B.Sc Mathematics and Computer Science</span>
@@ -79,11 +79,7 @@
       </div>
       <div class="profile-summary">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis
-          sapiente hic odio quod voluptates alias nobis excepturi perspiciatis
-          natus voluptatem exercitationem voluptas quibusdam deserunt impedit
-          libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum
-          perspiciatis, eaque quos nobis?
+          As a developer, I am on a relentless quest to expand my expertise and perfect my craft. My unwavering passion for this field is evident in the creation of exceptionally user-friendly websites. With a meticulous attention to detail and a talent for effective troubleshooting, I excel in both solo and collaborative environments. I am committed to driving innovation and achieving excellence in every project I undertake.
         </p>
       </div>
     </section>
@@ -96,19 +92,19 @@
           <h2>Frontend Development</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>HTML</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>CSS</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>JavaScript</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>ReactJs</span>
             </article>
           </div>
@@ -117,23 +113,23 @@
           <h2>Backend Development</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Ruby</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Ruby on Rails</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>PostgreSQL</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>MySQL</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>SQLite</span>
             </article>
           </div>
@@ -142,19 +138,19 @@
           <h2>Tools/Version Control</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Git</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Linux</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Trello</span>
             </article>
             <article>
-              <button class="icon"><img src="checkmark.png" alt="" /></button>
+              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
               <span>Slack</span>
             </article>
           </div>
@@ -162,57 +158,87 @@
       </div>
     </section>
 
-    
-    <section class="projects" id="projects">
+    <section class="projects-section" id="projects">
       <p>Browse my samples</p>
       <h1>Projects</h1>
       <div class="projects-container">
         <div class="sample-project">
-          <div class="project-image"><img src="project-1.png" alt="" /></div>
+          <div class="project-image">
+            <img src="assets/imagesearchengine.png" alt="" />
+          </div>
 
-          <h2>Project 1</h2>
+          <h2>Image Search Engine</h2>
           <div class="project-btns">
-            <button class="project-btn">live site</button>
-            <button class="project-btn">code</button>
+            <button
+              class="project-btn"
+                          >
+              <a href="https://image-search-engine-eight.vercel.app/" target="_blank">live site</a>
+            </button>
+            <button
+              class="project-btn"
+            
+            >
+              <a href="https://github.com/RemmyKyalo/image-search-Engine" target="_blank">code</a>
+            </button>
           </div>
         </div>
         <div class="sample-project">
-          <div class="project-image"><img src="project-1.png" alt="" /></div>
+          <div class="project-image">
+            <img src="assets/currency-converter.png" alt="" />
+          </div>
 
-          <h2>Project 1</h2>
+          <h2>Currency converter</h2>
           <div class="project-btns">
-            <button class="project-btn">live site</button>
-            <button class="project-btn">code</button>
+            <button class="project-btn"><a href="https://ccurrency-converter.netlify.app/" target="_blank">live site</a></button>
+            <button class="project-btn">
+              <a
+                href="https://github.com/RemmyKyalo/currency-converter"
+                target="_blank"
+                >code</a
+              >
+            </button>
           </div>
         </div>
         <div class="sample-project">
-          <div class="project-image"><img src="project-1.png" alt="" /></div>
+          <div class="project-image">
+            <img src="assets/weatherapp.png" alt="" />
+          </div>
 
-          <h2>Project 1</h2>
+          <h2>Weather App</h2>
           <div class="project-btns">
-            <button class="project-btn">live site</button>
-            <button class="project-btn">code</button>
+            <button
+              class="project-btn"
+              
+            >
+          <a href="https://weather-app-gules-ten.vercel.app/" target="_blank">live site</a>
+            </button>
+            <button
+              class="project-btn"
+                          >
+            <a
+            href="https://github.com/RemmyKyalo/weatherApp"
+            target="_blank"
+            >code</a
+            </button>
           </div>
         </div>
       </div>
     </section>
-  
-
-    <section class="contacts" id="contacts">
+    <section class="contacts-section" id="contacts">
       <p>Get in touch</p>
       <h1>Contact me</h1>
       <div class="contacts-btns">
-        <span
+        <div
           ><button class="icon social-btns">
-            <img src="email.png" alt="" /></button
-          ><a href="mailto:justkyalo99@gmail.com"
-            >justuskyalo@gmail.com</a
-          ></span
+            <img src="./assets/email.png" alt="" /></button
+          ><a href="mailto:justkyalo99@gmail.com" target="_blank"
+            >email</a
+          ></div
         >
-        <span
+        <div
           ><button class="icon social-btns">
-            <img src="linkedin.png" alt="" /></button
-          ><a href="#">justuskyalo</a></span
+            <img src="assets/linkedin.png" alt="" /></button
+          ><a href="https://www.linkedin.com/in/justus-kyalo/" target="_blank">Linkedin</a></div
         >
       </div>
     </section>
