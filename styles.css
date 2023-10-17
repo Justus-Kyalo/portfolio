@@ -27,11 +27,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
+  padding: 1.5rem;
   position: sticky;
   top: 0;
   background-color: white;
   z-index: 1;
+}
+section {
+  padding: 2rem;
 }
 .nav-links {
   display: flex;
@@ -106,7 +109,7 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  /* height: 80vh; */
   align-items: center;
 }
 .profile-pic-container {
@@ -190,8 +193,12 @@ a:hover {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  height: 90vh;
-  position: relative;
+  /* position: relative; */
+}
+
+.about-container p:first-child {
+  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
 }
 
 .about-me {
@@ -200,8 +207,9 @@ a:hover {
   width: 100%;
   padding: 1.5rem;
   gap: 2rem;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
+
 .experience,
 .education {
   border: 1px solid rgb(183, 183, 183);
@@ -217,16 +225,11 @@ a:hover {
   font-size: 1.2rem;
 }
 
-.about-container p:first-child {
-  color: rgb(85, 85, 85);
-  font-size: 1.2rem;
-}
 .profile-summary {
   color: rgb(85, 85, 85);
   font-size: 1rem;
-  padding-left: 7rem;
-  padding-right: 7rem;
   max-width: 800px;
+  padding: 1.5rem;
 }
 .arrow {
   position: absolute;
@@ -235,18 +238,19 @@ a:hover {
 }
 
 .skills-container {
-  position: relative;
-  height: 80vh;
+  /* min-height: 80vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2rem;
+  gap: 2rem;
+  /* width: max(80%,1200px);
+  margin-inline: auto; */
 }
 .skills-categories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2rem;
-  padding: 2rem;
+  /* column-gap: 2rem; */
+  gap: 2rem;
 }
 .category {
   border: 1px solid rgb(183, 183, 183);
@@ -274,7 +278,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  /* height: 90vh; */
   gap: 2rem;
 }
 .project-image {
@@ -288,7 +292,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 2rem;
+  gap: 2rem;
 }
 .sample-project {
   text-align: center;
@@ -308,7 +312,7 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
-  height: 80vh;
+  /* height: 80vh; */
   justify-content: center;
 }
 .contacts-btns {
