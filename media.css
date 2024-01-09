@@ -14,7 +14,8 @@
     gap: 3rem;
   }
   .profile-pic-container {
-    max-width: 250px;
+    min-width: 250px;
+    min-height: 250px;
   }
 
   .about-me {
