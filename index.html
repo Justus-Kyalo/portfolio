@@ -6,47 +6,43 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-   <section class="section-container">
-     <nav id="desktop-nav" >
-      <div class="logo" onclick="location.href='#profile'">Justus Kyalo</div>
-      <div>
-        <ul class="nav-links">
+    <section class="section-container header" >
+      <nav id="desktop-nav">
+        <div class="navbar">
+          <div class="logo" onclick="location.href='#profile'">
+            Justus Kyalo
+          </div>
+          <div class="menu-btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#contacts">contacts</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Justus Kyalo</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
-          <li><a href="#contacts" onclick="toggleMenu()">contacts</a></li>
-        </div>
-      </div>
-    </nav>
-   </section>
+      </nav>
+    </section>
     <section id="profile" class="profile-container section-container">
-            <div class="profile-pic-container">
-        <!-- <img src="./assets/remmypassport.jpeg" alt="" /> -->
+      <div class="profile-pic-container">
+        
       </div>
       <div class="profile-details">
         <p>Hello, I'm</p>
         <h1>Justus Kyalo</h1>
         <span>Frontend Developer</span>
         <div class="cv-contact-btns">
-          <button class="cv-btn" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+          <button class="cv-btn" onclick="window.open('./assets/resume.pdf')">
+            Download CV
+          </button>
           <button
             class="contact-btn"
             onclick="location.href
@@ -56,18 +52,30 @@
           </button>
         </div>
         <div class="icons-container">
-          <button class="icon" onclick="location.href='https://www.linkedin.com/in/justus-kyalo/'"><img src="./assets/linkedin.png" alt="" /></button
-          ><button class="icon" onclick="location.href='https://github.com/RemmyKyalo'"><img src="./assets/github.png" alt="" /></button>
+          <button
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/justus-kyalo/'"
+          >
+            <img src="./assets/linkedin.png" alt="" /></button
+          ><button
+            class="icon"
+            onclick="location.href='https://github.com/RemmyKyalo'"
+          >
+            <img src="./assets/github.png" alt="" />
+          </button>
         </div>
       </div>
     </section>
+    
 
     <section id="about" class="about-container section-container">
       <p>get to know more</p>
       <h1>About me</h1>
       <div class="about-me">
         <div class="experience">
-          <button class="icon"><img src="./assets/experience.png" alt="" /></button>
+          <button class="icon">
+            <img src="./assets/experience.png" alt="" />
+          </button>
           <h2>Experience</h2>
           <span>2+ Years <br />Frontend Development</span>
         </div>
@@ -81,10 +89,17 @@
       </div>
       <div class="profile-summary">
         <p>
-          As a developer, I am on a relentless quest to expand my expertise and perfect my craft. My unwavering passion for this field is evident in the creation of exceptionally user-friendly websites. With a meticulous attention to detail and a talent for effective troubleshooting, I excel in both solo and collaborative environments. I am committed to driving innovation and achieving excellence in every project I undertake.
+          As a developer, I am on a relentless quest to expand my expertise and
+          perfect my craft. My unwavering passion for this field is evident in
+          the creation of exceptionally user-friendly websites. With a
+          meticulous attention to detail and a talent for effective
+          troubleshooting, I excel in both solo and collaborative environments.
+          I am committed to driving innovation and achieving excellence in every
+          project I undertake.
         </p>
       </div>
     </section>
+  
 
     <section id="skills" class="skills-container section-container">
       <p>Explore MY</p>
@@ -94,19 +109,27 @@
           <h2>Frontend Development</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>HTML</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>CSS</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>JavaScript</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>ReactJs</span>
             </article>
           </div>
@@ -115,23 +138,33 @@
           <h2>Backend Development</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Ruby</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Ruby on Rails</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>PostgreSQL</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>MySQL</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>SQLite</span>
             </article>
           </div>
@@ -140,25 +173,34 @@
           <h2>Tools/Version Control</h2>
           <div class="articles-container">
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Git</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Linux</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Trello</span>
             </article>
             <article>
-              <button class="icon"><img src="./assets/checkmark.png" alt="" /></button>
+              <button class="icon">
+                <img src="./assets/checkmark.png" alt="" />
+              </button>
               <span>Slack</span>
             </article>
           </div>
         </div>
       </div>
     </section>
+     
 
     <section class="projects-section section-container" id="projects">
       <p>Browse my samples</p>
@@ -171,16 +213,19 @@
 
           <h2>Image Search Engine</h2>
           <div class="project-btns">
-            <button
-              class="project-btn"
-                          >
-              <a href="https://image-search-engine-eight.vercel.app/" target="_blank">live site</a>
+            <button class="project-btn">
+              <a
+                href="https://image-search-engine-eight.vercel.app/"
+                target="_blank"
+                >live site</a
+              >
             </button>
-            <button
-              class="project-btn"
-            
-            >
-              <a href="https://github.com/RemmyKyalo/image-search-Engine" target="_blank">code</a>
+            <button class="project-btn">
+              <a
+                href="https://github.com/RemmyKyalo/image-search-Engine"
+                target="_blank"
+                >code</a
+              >
             </button>
           </div>
         </div>
@@ -191,7 +236,11 @@
 
           <h2>Currency converter</h2>
           <div class="project-btns">
-            <button class="project-btn"><a href="https://ccurrency-converter.netlify.app/" target="_blank">live site</a></button>
+            <button class="project-btn">
+              <a href="https://ccurrency-converter.netlify.app/" target="_blank"
+                >live site</a
+              >
+            </button>
             <button class="project-btn">
               <a
                 href="https://github.com/RemmyKyalo/currency-converter"
@@ -208,42 +257,41 @@
 
           <h2>Weather App</h2>
           <div class="project-btns">
-            <button
-              class="project-btn"
-              
-            >
-          <a href="https://weather-app-gules-ten.vercel.app/" target="_blank">live site</a>
+            <button class="project-btn">
+              <a
+                href="https://weather-app-gules-ten.vercel.app/"
+                target="_blank"
+                >live site</a
+              >
             </button>
-            <button
-              class="project-btn"
-                          >
-            <a
-            href="https://github.com/RemmyKyalo/weatherApp"
-            target="_blank"
-            >code</a
+            <button class="project-btn">
+              <a href="https://github.com/RemmyKyalo/weatherApp" target="_blank"
+                >code</a
+              >
             </button>
           </div>
         </div>
       </div>
     </section>
+    
     <section class="contacts-section section-container" id="contacts">
       <p>Get in touch</p>
       <h1>Contact me</h1>
       <div class="contacts-btns">
-        <div
-          ><button class="icon social-btns">
+        <div>
+          <button class="icon social-btns">
             <img src="./assets/email.png" alt="" /></button
-          ><a href="mailto:justkyalo99@gmail.com" target="_blank"
-            >email</a
-          ></div
-        >
-        <div
-          ><button class="icon social-btns">
+          ><a href="mailto:justkyalo99@gmail.com" target="_blank">email</a>
+        </div>
+        <div>
+          <button class="icon social-btns">
             <img src="assets/linkedin.png" alt="" /></button
-          ><a href="https://www.linkedin.com/in/justus-kyalo/" target="_blank">Linkedin</a></div
-        >
+          ><a href="https://www.linkedin.com/in/justus-kyalo/" target="_blank"
+            >Linkedin</a
+          >
+        </div>
       </div>
-    </section>
+    </section> 
     <script src="script.js"></script>
   </body>
 </html>
